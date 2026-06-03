@@ -5,13 +5,13 @@
 class Gitprofile < Formula
   desc "Manage multiple git identities and SSH keys per directory."
   homepage "https://github.com/meanii/gitprofile"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/meanii/gitprofile/releases/download/v0.2.0/gitprofile_0.2.0_darwin_amd64.tar.gz"
-      sha256 "f43a8f60cacd835c3e904fd03c3f40443be64104c8e38d3c09ecf6a22b4aa440"
+      url "https://github.com/meanii/gitprofile/releases/download/v0.3.0/gitprofile_0.3.0_darwin_amd64.tar.gz"
+      sha256 "531cefb9742540bda50dc3e386bdae5e16d082df330e9d2c3c0a181dd85ff453"
 
       define_method(:install) do
         bin.install "gitprofile"
@@ -21,8 +21,8 @@ class Gitprofile < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/meanii/gitprofile/releases/download/v0.2.0/gitprofile_0.2.0_darwin_arm64.tar.gz"
-      sha256 "32511a3dac68b5915f0fd9f04101f6d01d258dfa17263454b928118488ea665d"
+      url "https://github.com/meanii/gitprofile/releases/download/v0.3.0/gitprofile_0.3.0_darwin_arm64.tar.gz"
+      sha256 "afd28f19906357505df83fc1fca93fcaad6f92a6d7f6511bd21e213842bc4f1a"
 
       define_method(:install) do
         bin.install "gitprofile"
@@ -35,8 +35,8 @@ class Gitprofile < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meanii/gitprofile/releases/download/v0.2.0/gitprofile_0.2.0_linux_amd64.tar.gz"
-      sha256 "11529f54ca81975d9f364d891261defea326c0967a2519598a5be1c0bf2f2d8a"
+      url "https://github.com/meanii/gitprofile/releases/download/v0.3.0/gitprofile_0.3.0_linux_amd64.tar.gz"
+      sha256 "20edcae58d3acb568661d761238ad3ab81dd23f0f6a64037a7daa493f222495f"
       define_method(:install) do
         bin.install "gitprofile"
         bash_completion.install "completions/gitprofile.bash" => "gitprofile"
@@ -45,8 +45,8 @@ class Gitprofile < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meanii/gitprofile/releases/download/v0.2.0/gitprofile_0.2.0_linux_arm64.tar.gz"
-      sha256 "9618de103fc37a2f17d64bc65b64f80d631311e900e3294193041c72deea30c0"
+      url "https://github.com/meanii/gitprofile/releases/download/v0.3.0/gitprofile_0.3.0_linux_arm64.tar.gz"
+      sha256 "b43ba06a67a5fe893a640dd6ce924b95c89a54c2202cc5e88a9365b2b619205b"
       define_method(:install) do
         bin.install "gitprofile"
         bash_completion.install "completions/gitprofile.bash" => "gitprofile"
